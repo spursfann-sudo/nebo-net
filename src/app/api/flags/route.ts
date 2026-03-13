@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getFlags, addFlag } from "@/lib/flags";
 
+export const runtime = "nodejs";
+
 export async function GET() {
   try {
     const flags = await getFlags();

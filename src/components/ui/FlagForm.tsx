@@ -26,10 +26,15 @@ export default function FlagForm({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ party, tab, section, note: note.trim() }),
       });
-      if (!res.ok) throw new Error("Failed to submit");
+      if (!res.ok) {
+        const errBody = await res.text();
+        console.error("Flag submission failed:", res.status, errBody);
+        throw new Error("Failed to submit");
+      }
       setStatus("sent");
       setTimeout(() => onClose(), 2000);
-    } catch {
+    } catch (err) {
+      console.error("Flag submission error:", err);
       setStatus("error");
     }
   };
