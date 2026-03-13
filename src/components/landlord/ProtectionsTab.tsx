@@ -32,7 +32,7 @@ export default function ProtectionsTab() {
 
         <div className="bg-blue-50 rounded-lg p-3.5 mt-2.5 border border-blue-200">
           <div className="font-semibold text-sm mb-1.5 text-blue-800">
-            New in v2: Survival Clause
+            Survival Clause
           </div>
           <p className="text-[13px] text-blue-800">
             Even after the guaranty burns off, it <strong>survives for all obligations that accrued before the burn-off date</strong> — unpaid rent, outstanding reconciliation amounts, and unreimbursed costs. This means if the tenant owes money from the guaranty period that hasn&apos;t been collected yet, Kendall Newson remains on the hook for those specific amounts regardless of when you pursue them.
@@ -40,7 +40,7 @@ export default function ProtectionsTab() {
         </div>
       </Section>
 
-      <Section title="Failure to Open Default (New in v2)" icon="🚪" party="landlord" tab={tab}>
+      <Section title="Failure to Open Default" icon="🚪" party="landlord" tab={tab}>
         <p className="mb-2.5">
           If the tenant hasn&apos;t opened for business by the Outside Opening Date (90 days after delivery), hasn&apos;t been diligently preparing, or refuses to accept possession, the tenant is in default. Your remedies include:
         </p>
@@ -51,7 +51,7 @@ export default function ProtectionsTab() {
           <li className="mb-1">Pursue the personal guarantor directly</li>
         </ul>
         <Callout type="success">
-          This is a major addition from v1, where the only consequence of the tenant not opening was that full rent kicked in automatically. Now you have an explicit termination right and expanded damage recovery if the tenant fails to open.
+          This gives you an explicit termination right and expanded damage recovery if the tenant fails to open, beyond the automatic rent trigger at the Outside Opening Date.
         </Callout>
       </Section>
 
@@ -90,7 +90,7 @@ export default function ProtectionsTab() {
         </Callout>
       </Section>
 
-      <Section title="Memorandum of Lease (New in v2)" icon="📝" party="landlord" tab={tab}>
+      <Section title="Memorandum of Lease" icon="📝" party="landlord" tab={tab}>
         <p className="mb-2.5">
           Either party can record a short-form memorandum of the lease in the Madison County real property records. The memorandum identifies the parties, premises, and term (including renewal rights) but omits financial terms. Both parties must cooperate within 15 business days.
         </p>

@@ -20,7 +20,7 @@ export default function GuideHeader({ party }: { party: Party }) {
         4000 Pulaski Pike NW, Huntsville, AL 35810
       </div>
       <div className="inline-block mt-2.5 px-3 py-1 bg-amber-100 rounded-full text-xs font-semibold text-amber-800">
-        DRAFT v2 — For Discussion Only
+        DRAFT — For Discussion Only
       </div>
       <div className="mt-3">
         <Link href={otherHref} className={`text-xs ${accentClass} hover:underline`}>

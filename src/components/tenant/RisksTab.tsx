@@ -10,7 +10,7 @@ export default function RisksTab() {
     <div>
       <Section title="Your Biggest Risk: The 90-Day Outside Opening Date" icon="⏱️" defaultOpen={true} party="tenant" tab={tab}>
         <p className="mb-2.5">
-          Full rent starts 90 days after delivery, whether or not you&apos;ve opened. In v2, this is now also an <strong>explicit default trigger</strong>. If you haven&apos;t opened, haven&apos;t been diligently preparing, or refuse to accept possession:
+          Full rent starts 90 days after delivery, whether or not you&apos;ve opened. This is also an <strong>explicit default trigger</strong>. If you haven&apos;t opened, haven&apos;t been diligently preparing, or refuse to accept possession:
         </p>
         <ul className="mb-2.5 pl-5 text-[13px] list-disc">
           <li className="mb-1">Full Base Rent + Additional Rent become due regardless</li>
@@ -29,16 +29,16 @@ export default function RisksTab() {
           You&apos;re signing before renovations. Your protection is the Outside Delivery Date — if the landlord misses it (as extended by Force Majeure and Tenant Delay), you can walk away within 30 days. Security returned, Guaranty terminates, no further liability.
         </p>
         <Callout type="warning">
-          Respond quickly and in writing to all landlord requests during construction. Any delay attributable to you extends the landlord&apos;s deadline and pushes back your termination right. V2 adds a Change Order process — engage with it promptly.
+          Respond quickly and in writing to all landlord requests during construction. Any delay attributable to you extends the landlord&apos;s deadline and pushes back your termination right. The lease includes a Change Order process — engage with it promptly.
         </Callout>
       </Section>
 
       <Section title="Broader LOC Draw Rights" icon="💳" party="tenant" tab={tab}>
         <p className="mb-2.5">
-          V2 significantly broadens what the landlord can draw your security deposit for:
+          The landlord has broad rights to draw your security deposit for:
         </p>
         <ul className="mb-2.5 pl-5 text-[13px] leading-7 list-disc">
-          <li>Monetary and non-monetary defaults (same as v1)</li>
+          <li>Monetary and non-monetary defaults</li>
           <li><strong>Carrying costs</strong> — taxes, insurance, utilities, maintenance during vacancy caused by your default</li>
           <li><strong>Re-tenanting costs</strong> — brokerage commissions, TI concessions, free rent for new tenant, legal fees, marketing</li>
           <li>Enforcement costs (attorneys&apos; fees, court costs)</li>
@@ -71,7 +71,7 @@ export default function RisksTab() {
           <div className="text-[13px]">Filing not dismissed within 60 days.</div>
         </div>
         <div className="bg-red-50 rounded-lg p-3.5 mb-2 border border-red-200">
-          <div className="font-semibold text-[13px] text-red-800 mb-1">Failure to Open (NEW in v2)</div>
+          <div className="font-semibold text-[13px] text-red-800 mb-1">Failure to Open</div>
           <div className="text-[13px] text-red-800">Not open by Outside Opening Date (90 days post-delivery), not diligently preparing, or refusing possession. Landlord can terminate on 10 days&apos; notice, draw Security for carrying/re-tenanting costs, recover damages including unamortized Landlord Improvement costs.</div>
         </div>
       </Section>

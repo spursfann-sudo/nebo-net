@@ -53,9 +53,9 @@ export default function ObligationsTab() {
         </Callout>
       </Section>
 
-      <Section title="Ongoing Maintenance (Expanded in v2)" icon="🔧" party="tenant" tab={tab}>
+      <Section title="Ongoing Maintenance" icon="🔧" party="tenant" tab={tab}>
         <p className="mb-2.5">
-          V2 expands your maintenance responsibilities to include routine roof, structural, and HVAC items under $10,000:
+          Your maintenance responsibilities include routine roof, structural, and HVAC items under $10,000:
         </p>
         <ul className="mb-2.5 pl-5 text-[13px] leading-7 list-disc">
           <li>Interior finishes, painting, flooring, doors, hardware, plumbing fixtures</li>
@@ -94,7 +94,7 @@ export default function ObligationsTab() {
         </div>
         <div className="bg-blue-50 rounded-lg p-3.5 mb-2.5 border border-blue-200">
           <div className="font-semibold text-sm mb-1.5 text-blue-800">
-            New in v2: Survival Clause
+            Survival Clause
           </div>
           <p className="text-[13px] text-blue-800">
             Even after burn-off, the guaranty <strong>survives for obligations that accrued before the burn-off date</strong>. This means unpaid rent, outstanding NNN reconciliation amounts, or unreimbursed costs from the guaranty period can still be pursued against Kendall Newson personally, regardless of when the landlord makes the demand.

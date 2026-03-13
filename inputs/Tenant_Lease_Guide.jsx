@@ -239,7 +239,7 @@ export default function TenantLeaseGuide() {
             color: "#92400e",
           }}
         >
-          DRAFT v2 — For Discussion Only
+          DRAFT — For Discussion Only
         </div>
       </div>
 
@@ -288,7 +288,7 @@ export default function TenantLeaseGuide() {
               You are signing <strong>before the building is renovated</strong>. The landlord needs a signed lease to secure financing. In exchange, you pay no rent during construction, get a 90-day transition period after delivery, and have non-exclusive early access rights to begin setup before the space is formally delivered.
             </p>
             <Callout type="tip">
-              The "modified" part still works in your favor — in a pure NNN lease, you'd cover everything including the roof and structure. Here, the landlord keeps all capital expenses above $10,000 plus latent defects and pre-existing code violations. The v2 $10,000 threshold clearly separates what's yours (routine) from what's the landlord's (capital).
+              The "modified" part still works in your favor — in a pure NNN lease, you'd cover everything including the roof and structure. Here, the landlord keeps all capital expenses above $10,000 plus latent defects and pre-existing code violations. The $10,000 threshold clearly separates what's yours (routine) from what's the landlord's (capital).
             </Callout>
           </Section>
 
@@ -332,25 +332,25 @@ export default function TenantLeaseGuide() {
             </Callout>
           </Section>
 
-          <Section title="What Changed from v1 to v2" icon="📝">
+          <Section title="Key Lease Highlights" icon="📝">
             <p style={{ margin: "0 0 10px" }}>
-              Key changes that affect you:
+              Key provisions to understand before signing:
             </p>
             <div style={{ background: "#fef2f2", borderRadius: 8, padding: 14, marginBottom: 8, border: "1px solid #fecaca" }}>
-              <strong style={{ color: "#991b1b" }}>Less favorable:</strong>
+              <strong style={{ color: "#991b1b" }}>Provisions to be aware of:</strong>
               <ul style={{ margin: "6px 0 0", paddingLeft: 18, fontSize: 13, color: "#991b1b" }}>
-                <li>You now pay routine roof, structural, and HVAC maintenance (items under $10K)</li>
-                <li>FMV at renewal is now landlord's determination (was mutual); you bear full arbitration costs if you dispute</li>
-                <li>Failure to Open is now an explicit default (was just automatic rent trigger)</li>
-                <li>Landlord's LOC draw rights are broader (carrying costs, re-tenanting costs)</li>
+                <li>You pay routine roof, structural, and HVAC maintenance (items under $10K)</li>
+                <li>FMV at renewal is the landlord's determination; you bear full arbitration costs if you dispute</li>
+                <li>Failure to Open is an explicit default (not just an automatic rent trigger)</li>
+                <li>Landlord's LOC draw rights cover carrying costs and re-tenanting costs</li>
                 <li>Guaranty survival clause means accrued obligations survive the burn-off</li>
               </ul>
             </div>
             <div style={{ background: "#f0fdf4", borderRadius: 8, padding: 14, marginBottom: 8, border: "1px solid #bbf7d0" }}>
-              <strong style={{ color: "#166534" }}>More favorable:</strong>
+              <strong style={{ color: "#166534" }}>Provisions that protect you:</strong>
               <ul style={{ margin: "6px 0 0", paddingLeft: 18, fontSize: 13, color: "#166534" }}>
                 <li>Clear $10,000 capital threshold protects you from surprise large charges</li>
-                <li>Capital exclusions now explicitly cover latent defects and pre-existing code violations</li>
+                <li>Capital exclusions explicitly cover latent defects and pre-existing code violations</li>
                 <li>Management fee capped at [CAP]% or $[AMOUNT]</li>
                 <li>Non-exclusive early access during pre-delivery period for setup</li>
                 <li>Change order provisions give you approval rights on material scope changes</li>
@@ -394,7 +394,7 @@ export default function TenantLeaseGuide() {
               whatYouPay="You pay: Base Rent + NNN"
               color="#ef4444"
             >
-              Begins when you open or 90 days after delivery — whichever is first. This is the "Outside Opening Date." Even if you're not open, full rent starts at the 90-day mark. And in v2, failure to open by this date is also an explicit default.
+              Begins when you open or 90 days after delivery — whichever is first. This is the "Outside Opening Date." Even if you're not open, full rent starts at the 90-day mark. Additionally, failure to open by this date is an explicit default.
             </PhaseCard>
 
             <Callout type="action">
@@ -433,14 +433,14 @@ export default function TenantLeaseGuide() {
 
           <Section title="Who Pays for What (NNN Breakdown)" icon="📊">
             <p style={{ margin: "0 0 10px" }}>
-              V2 expands what you pay for. Here's the full picture:
+              Here's what you're responsible for beyond base rent:
             </p>
             <CostRow item="Property Taxes" paidBy="You" note="100% passed through" />
             <CostRow item="Building Insurance (Landlord's policy)" paidBy="You" note="Premiums passed through" />
             <CostRow item="Your Own Insurance Policies" paidBy="You" note="CGL, professional liability, cyber, etc." />
             <CostRow item="Utilities" paidBy="You" note="Direct contracts with providers" />
-            <CostRow item="Routine Roof Maintenance" paidBy="You" note="NEW in v2: patching, gutters, flashing, minor membrane < $10K" />
-            <CostRow item="Routine Structural Maintenance" paidBy="You" note="NEW in v2: tuckpointing, caulking, crack repair < $10K" />
+            <CostRow item="Routine Roof Maintenance" paidBy="You" note="Patching, gutters, flashing, minor membrane < $10K" />
+            <CostRow item="Routine Structural Maintenance" paidBy="You" note="Tuckpointing, caulking, crack repair < $10K" />
             <CostRow item="Routine HVAC Maintenance" paidBy="You" note="Filters, coils, refrigerant, belts, PM contracts < $10K" />
             <CostRow item="Landscaping, Pest Control, Trash" paidBy="You" note="Part of Operating Costs" />
             <CostRow item="Parking Lot Patching & Striping" paidBy="You" note="Routine only, not full repaving" />
@@ -463,7 +463,7 @@ export default function TenantLeaseGuide() {
 
           <Section title="Capital Amortization Risk" icon="⚠️">
             <p style={{ margin: "0 0 10px" }}>
-              New in v2: If a major system (roof, HVAC, plumbing, electrical, structural) fails prematurely because of <strong>your negligence, improper maintenance, or misuse</strong>, the landlord can propose amortizing the replacement cost over the system's useful life. Your amortized share becomes Additional Rent.
+              If a major system (roof, HVAC, plumbing, electrical, structural) fails prematurely because of <strong>your negligence, improper maintenance, or misuse</strong>, the landlord can propose amortizing the replacement cost over the system's useful life. Your amortized share becomes Additional Rent.
             </p>
             <Callout type="warning">
               This can only take effect if both parties agree in writing — you can't be forced into it. But it gives the landlord leverage if you've neglected maintenance. The best defense: keep your HVAC maintenance contract current and document all maintenance activities carefully.
@@ -477,7 +477,7 @@ export default function TenantLeaseGuide() {
             <Term label="Replenishment" value="15 business days after draw" />
             <Term label="Return" value="30 days after lease expiration + premises surrender" />
             <Callout type="warning">
-              V2 broadens the landlord's draw rights significantly. The landlord can now draw for: monetary defaults, non-monetary defaults, carrying costs during vacancy, re-tenanting costs (brokerage, TI concessions, free rent, legal, marketing), enforcement costs, AND failure-to-open costs. Failure to replenish after a draw is itself a monetary default.
+              The landlord has broad draw rights. They can draw for: monetary defaults, non-monetary defaults, carrying costs during vacancy, re-tenanting costs (brokerage, TI concessions, free rent, legal, marketing), enforcement costs, AND failure-to-open costs. Failure to replenish after a draw is itself a monetary default.
             </Callout>
           </Section>
         </div>
@@ -504,7 +504,7 @@ export default function TenantLeaseGuide() {
             </div>
           </Section>
 
-          <Section title="Early Access Rights (New in v2)" icon="🔑">
+          <Section title="Early Access Rights" icon="🔑">
             <p style={{ margin: "0 0 10px" }}>
               After the landlord delivers the Anticipated Delivery Notice (about 90 days before expected completion), you have <strong>non-exclusive access</strong> for:
             </p>
@@ -535,7 +535,7 @@ export default function TenantLeaseGuide() {
             </Callout>
           </Section>
 
-          <Section title="Change Order Rights (New in v2)" icon="📝">
+          <Section title="Change Order Rights" icon="📝">
             <p style={{ margin: "0 0 10px" }}>
               If the landlord needs to change the renovation scope due to field conditions or code requirements and the change materially alters the scope or delays delivery by more than [THRESHOLD] days, you can <strong>approve or reject</strong> within 5 business days.
             </p>
@@ -558,7 +558,7 @@ export default function TenantLeaseGuide() {
               You can audit the landlord's records upon 10 business days' notice. Landlord keeps records for 3 years. If the audit shows overstatement exceeding 3%, the landlord pays for the audit and refunds the overcharge.
             </p>
             <Callout type="success">
-              With v2 expanding what's included in operating costs (routine roof, structural, HVAC), your audit rights become even more important. Make sure the landlord is properly distinguishing routine items (your cost) from capital items over $10,000 (their cost).
+              With routine roof, structural, and HVAC costs included in your operating expenses, your audit rights are especially important. Make sure the landlord is properly distinguishing routine items (your cost) from capital items over $10,000 (their cost).
             </Callout>
           </Section>
 
@@ -600,7 +600,7 @@ export default function TenantLeaseGuide() {
             </Callout>
           </Section>
 
-          <Section title="Memorandum of Lease (New in v2)" icon="📄">
+          <Section title="Memorandum of Lease" icon="📄">
             <p style={{ margin: "0 0 10px" }}>
               Either party can record a short-form memorandum of the lease in the Madison County records. It identifies the parties, premises, and term but omits financial terms. The other party must cooperate within 15 business days.
             </p>
@@ -659,9 +659,9 @@ export default function TenantLeaseGuide() {
             </Callout>
           </Section>
 
-          <Section title="Ongoing Maintenance (Expanded in v2)" icon="🔧">
+          <Section title="Ongoing Maintenance" icon="🔧">
             <p style={{ margin: "0 0 10px" }}>
-              V2 expands your maintenance responsibilities to include routine roof, structural, and HVAC items under $10,000:
+              Your maintenance responsibilities include routine roof, structural, and HVAC items under $10,000:
             </p>
             <ul style={{ margin: "0 0 10px", paddingLeft: 20, fontSize: 13, lineHeight: 1.8 }}>
               <li>Interior finishes, painting, flooring, doors, hardware, plumbing fixtures</li>
@@ -700,7 +700,7 @@ export default function TenantLeaseGuide() {
             </div>
             <div style={{ background: "#eff6ff", borderRadius: 8, padding: 14, marginBottom: 10, border: "1px solid #bfdbfe" }}>
               <div style={{ fontWeight: 600, fontSize: 14, marginBottom: 6, color: "#1e40af" }}>
-                New in v2: Survival Clause
+                Survival Clause
               </div>
               <p style={{ margin: 0, fontSize: 13, color: "#1e40af" }}>
                 Even after burn-off, the guaranty <strong>survives for obligations that accrued before the burn-off date</strong>. This means unpaid rent, outstanding NNN reconciliation amounts, or unreimbursed costs from the guaranty period can still be pursued against Kendall Newson personally, regardless of when the landlord makes the demand.
@@ -739,7 +739,7 @@ export default function TenantLeaseGuide() {
         <div>
           <Section title="Your Biggest Risk: The 90-Day Outside Opening Date" icon="⏱️" defaultOpen={true}>
             <p style={{ margin: "0 0 10px" }}>
-              Full rent starts 90 days after delivery, whether or not you've opened. In v2, this is now also an <strong>explicit default trigger</strong>. If you haven't opened, haven't been diligently preparing, or refuse to accept possession:
+              Full rent starts 90 days after delivery, whether or not you've opened. This is also an <strong>explicit default trigger</strong>. If you haven't opened, haven't been diligently preparing, or refuse to accept possession:
             </p>
             <ul style={{ margin: "0 0 10px", paddingLeft: 20, fontSize: 13 }}>
               <li style={{ marginBottom: 4 }}>Full Base Rent + Additional Rent become due regardless</li>
@@ -758,16 +758,16 @@ export default function TenantLeaseGuide() {
               You're signing before renovations. Your protection is the Outside Delivery Date — if the landlord misses it (as extended by Force Majeure and Tenant Delay), you can walk away within 30 days. Security returned, Guaranty terminates, no further liability.
             </p>
             <Callout type="warning">
-              Respond quickly and in writing to all landlord requests during construction. Any delay attributable to you extends the landlord's deadline and pushes back your termination right. V2 adds a Change Order process — engage with it promptly.
+              Respond quickly and in writing to all landlord requests during construction. Any delay attributable to you extends the landlord's deadline and pushes back your termination right. The lease includes a Change Order process — engage with it promptly.
             </Callout>
           </Section>
 
           <Section title="Broader LOC Draw Rights" icon="💳">
             <p style={{ margin: "0 0 10px" }}>
-              V2 significantly broadens what the landlord can draw your security deposit for:
+              The landlord has broad rights to draw your security deposit for:
             </p>
             <ul style={{ margin: "0 0 10px", paddingLeft: 20, fontSize: 13, lineHeight: 1.8 }}>
-              <li>Monetary and non-monetary defaults (same as v1)</li>
+              <li>Monetary and non-monetary defaults</li>
               <li><strong>Carrying costs</strong> — taxes, insurance, utilities, maintenance during vacancy caused by your default</li>
               <li><strong>Re-tenanting costs</strong> — brokerage commissions, TI concessions, free rent for new tenant, legal fees, marketing</li>
               <li>Enforcement costs (attorneys' fees, court costs)</li>
@@ -800,7 +800,7 @@ export default function TenantLeaseGuide() {
               <div style={{ fontSize: 13 }}>Filing not dismissed within 60 days.</div>
             </div>
             <div style={{ background: "#fef2f2", borderRadius: 8, padding: 14, marginBottom: 8, border: "1px solid #fecaca" }}>
-              <div style={{ fontWeight: 600, fontSize: 13, color: "#991b1b", marginBottom: 4 }}>Failure to Open (NEW in v2)</div>
+              <div style={{ fontWeight: 600, fontSize: 13, color: "#991b1b", marginBottom: 4 }}>Failure to Open</div>
               <div style={{ fontSize: 13, color: "#991b1b" }}>Not open by Outside Opening Date (90 days post-delivery), not diligently preparing, or refusing possession. Landlord can terminate on 10 days' notice, draw Security for carrying/re-tenanting costs, recover damages including unamortized Landlord Improvement costs.</div>
             </div>
           </Section>

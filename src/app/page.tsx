@@ -12,7 +12,7 @@ export default function Home() {
           4000 Pulaski Pike NW, Huntsville, AL 35810
         </div>
         <div className="inline-block px-3 py-1 bg-amber-100 rounded-full text-xs font-semibold text-amber-800">
-          DRAFT v2 — For Discussion Only
+          DRAFT — For Discussion Only
         </div>
         <p className="text-sm text-slate-600 mt-6 max-w-md mx-auto leading-relaxed">
           This interactive guide makes the lease agreement accessible and understandable.
