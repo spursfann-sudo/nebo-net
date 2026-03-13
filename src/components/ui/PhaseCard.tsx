@@ -2,12 +2,14 @@ export default function PhaseCard({
   phase,
   title,
   subtitle,
+  badge,
   color,
   children,
 }: {
   phase: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
+  badge?: string;
   color: string;
   children: React.ReactNode;
 }) {
@@ -25,7 +27,15 @@ export default function PhaseCard({
         </span>
         <span className="font-semibold text-sm">{title}</span>
       </div>
-      <div className="text-xs text-slate-500 mb-1">{subtitle}</div>
+      {subtitle && <div className="text-xs text-slate-500 mb-1">{subtitle}</div>}
+      {badge && (
+        <div
+          className="inline-block text-xs font-semibold py-0.5 px-2 rounded mb-1.5"
+          style={{ color, backgroundColor: `${color}15` }}
+        >
+          {badge}
+        </div>
+      )}
       <div className="text-[13px] text-slate-700">{children}</div>
     </div>
   );
