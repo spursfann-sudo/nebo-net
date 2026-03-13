@@ -1,21 +1,38 @@
 import fs from "fs/promises";
 import path from "path";
+import os from "os";
 import type { Flag } from "./types";
 
-const DATA_DIR = path.join(process.cwd(), "data");
-const FLAGS_FILE = path.join(DATA_DIR, "flags.json");
+const PRIMARY_DIR = path.join(process.cwd(), "data");
+const FALLBACK_DIR = path.join(os.tmpdir(), "nebo-net-flags");
+const FLAGS_FILENAME = "flags.json";
 
-async function ensureDataDir() {
+let resolvedDir: string | null = null;
+
+async function getDataDir(): Promise<string> {
+  if (resolvedDir) return resolvedDir;
+
+  // Try primary dir first
   try {
-    await fs.mkdir(DATA_DIR, { recursive: true });
+    await fs.mkdir(PRIMARY_DIR, { recursive: true });
+    const testFile = path.join(PRIMARY_DIR, ".write-test");
+    await fs.writeFile(testFile, "");
+    await fs.unlink(testFile);
+    resolvedDir = PRIMARY_DIR;
+    return PRIMARY_DIR;
   } catch {
-    // directory already exists
+    // Primary dir not writable, fall back to temp
   }
+
+  await fs.mkdir(FALLBACK_DIR, { recursive: true });
+  resolvedDir = FALLBACK_DIR;
+  return FALLBACK_DIR;
 }
 
 export async function getFlags(): Promise<Flag[]> {
   try {
-    const data = await fs.readFile(FLAGS_FILE, "utf-8");
+    const dir = await getDataDir();
+    const data = await fs.readFile(path.join(dir, FLAGS_FILENAME), "utf-8");
     return JSON.parse(data) as Flag[];
   } catch {
     return [];
@@ -25,7 +42,8 @@ export async function getFlags(): Promise<Flag[]> {
 export async function addFlag(
   flag: Omit<Flag, "id" | "createdAt">
 ): Promise<Flag> {
-  await ensureDataDir();
+  const dir = await getDataDir();
+  const flagsFile = path.join(dir, FLAGS_FILENAME);
   const flags = await getFlags();
   const newFlag: Flag = {
     ...flag,
@@ -33,6 +51,6 @@ export async function addFlag(
     createdAt: new Date().toISOString(),
   };
   flags.push(newFlag);
-  await fs.writeFile(FLAGS_FILE, JSON.stringify(flags, null, 2));
+  await fs.writeFile(flagsFile, JSON.stringify(flags, null, 2));
   return newFlag;
 }
