@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { submitFlag } from "@/lib/actions";
 import type { Party } from "@/lib/types";
 
 export default function FlagForm({
@@ -21,15 +22,10 @@ export default function FlagForm({
     if (!note.trim()) return;
     setStatus("sending");
     try {
-      const res = await fetch("/api/flags", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ party, tab, section, note: note.trim() }),
-      });
-      if (!res.ok) {
-        const errBody = await res.text();
-        console.error("Flag submission failed:", res.status, errBody);
-        throw new Error("Failed to submit");
+      const result = await submitFlag(party, tab, section, note.trim());
+      if (!result.success) {
+        console.error("Flag submission failed:", result.error);
+        throw new Error(result.error);
       }
       setStatus("sent");
       setTimeout(() => onClose(), 2000);
