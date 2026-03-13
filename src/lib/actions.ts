@@ -16,6 +16,7 @@ export async function submitFlag(
     await addFlag({ party, tab, section, note });
     return { success: true as const };
   } catch (err) {
+    console.error("[submitFlag] error:", err);
     return { success: false as const, error: String(err) };
   }
 }
