@@ -25,7 +25,7 @@ export default function RightsTab() {
         </div>
       </Section>
 
-      <Section title="Early Access Rights (New in v2)" icon="🔑" party="tenant" tab={tab}>
+      <Section title="Early Access Rights" icon="🔑" party="tenant" tab={tab}>
         <p className="mb-2.5">
           After the landlord delivers the Anticipated Delivery Notice (about 90 days before expected completion), you have <strong>non-exclusive access</strong> for:
         </p>
@@ -56,7 +56,7 @@ export default function RightsTab() {
         </Callout>
       </Section>
 
-      <Section title="Change Order Rights (New in v2)" icon="📝" party="tenant" tab={tab}>
+      <Section title="Change Order Rights" icon="📝" party="tenant" tab={tab}>
         <p className="mb-2.5">
           If the landlord needs to change the renovation scope due to field conditions or code requirements and the change materially alters the scope or delays delivery by more than {leaseConfig.threshold} days, you can <strong>approve or reject</strong> within 5 business days.
         </p>
@@ -79,7 +79,7 @@ export default function RightsTab() {
           You can audit the landlord&apos;s records upon 10 business days&apos; notice. Landlord keeps records for 3 years. If the audit shows overstatement exceeding 3%, the landlord pays for the audit and refunds the overcharge.
         </p>
         <Callout type="success">
-          With v2 expanding what&apos;s included in operating costs (routine roof, structural, HVAC), your audit rights become even more important. Make sure the landlord is properly distinguishing routine items (your cost) from capital items over $10,000 (their cost).
+          With routine roof, structural, and HVAC costs included in your operating expenses, your audit rights are especially important. Make sure the landlord is properly distinguishing routine items (your cost) from capital items over $10,000 (their cost).
         </Callout>
       </Section>
 
@@ -121,7 +121,7 @@ export default function RightsTab() {
         </Callout>
       </Section>
 
-      <Section title="Memorandum of Lease (New in v2)" icon="📄" party="tenant" tab={tab}>
+      <Section title="Memorandum of Lease" icon="📄" party="tenant" tab={tab}>
         <p className="mb-2.5">
           Either party can record a short-form memorandum of the lease in the Madison County records. It identifies the parties, premises, and term but omits financial terms. The other party must cooperate within 15 business days.
         </p>

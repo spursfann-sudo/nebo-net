@@ -121,7 +121,7 @@ Port all content from both JSX files faithfully. Do not summarize, rewrite, or o
 - All `CostRow` items (tenant costs tab)
 - The timeline visualization (landlord timeline tab) with colored dots and connecting lines
 - All bullet lists and their content
-- The "v1 vs v2" comparison blocks (tenant overview tab)
+- The "Key Lease Highlights" comparison blocks (tenant overview tab)
 
 Replace bracket placeholders with references to the centralized config.
 

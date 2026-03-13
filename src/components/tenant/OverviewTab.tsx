@@ -16,7 +16,7 @@ export default function OverviewTab() {
           You are signing <strong>before the building is renovated</strong>. The landlord needs a signed lease to secure financing. In exchange, you pay no rent during construction, get a 90-day transition period after delivery, and have non-exclusive early access rights to begin setup before the space is formally delivered.
         </p>
         <Callout type="tip">
-          The &ldquo;modified&rdquo; part still works in your favor — in a pure NNN lease, you&apos;d cover everything including the roof and structure. Here, the landlord keeps all capital expenses above $10,000 plus latent defects and pre-existing code violations. The v2 $10,000 threshold clearly separates what&apos;s yours (routine) from what&apos;s the landlord&apos;s (capital).
+          The &ldquo;modified&rdquo; part still works in your favor — in a pure NNN lease, you&apos;d cover everything including the roof and structure. Here, the landlord keeps all capital expenses above $10,000 plus latent defects and pre-existing code violations. The $10,000 threshold clearly separates what&apos;s yours (routine) from what&apos;s the landlord&apos;s (capital).
         </Callout>
       </Section>
 
@@ -60,25 +60,25 @@ export default function OverviewTab() {
         </Callout>
       </Section>
 
-      <Section title="What Changed from v1 to v2" icon="📝" party="tenant" tab={tab}>
+      <Section title="Key Lease Highlights" icon="📝" party="tenant" tab={tab}>
         <p className="mb-2.5">
-          Key changes that affect you:
+          Key provisions to understand before signing:
         </p>
         <div className="bg-red-50 rounded-lg p-3.5 mb-2 border border-red-200">
-          <strong className="text-red-800">Less favorable:</strong>
+          <strong className="text-red-800">Provisions to be aware of:</strong>
           <ul className="mt-1.5 pl-[18px] text-[13px] text-red-800 list-disc">
-            <li>You now pay routine roof, structural, and HVAC maintenance (items under $10K)</li>
-            <li>FMV at renewal is now landlord&apos;s determination (was mutual); you bear full arbitration costs if you dispute</li>
-            <li>Failure to Open is now an explicit default (was just automatic rent trigger)</li>
-            <li>Landlord&apos;s LOC draw rights are broader (carrying costs, re-tenanting costs)</li>
+            <li>You pay routine roof, structural, and HVAC maintenance (items under $10K)</li>
+            <li>FMV at renewal is the landlord&apos;s determination; you bear full arbitration costs if you dispute</li>
+            <li>Failure to Open is an explicit default (not just an automatic rent trigger)</li>
+            <li>Landlord&apos;s LOC draw rights cover carrying costs and re-tenanting costs</li>
             <li>Guaranty survival clause means accrued obligations survive the burn-off</li>
           </ul>
         </div>
         <div className="bg-green-50 rounded-lg p-3.5 mb-2 border border-green-200">
-          <strong className="text-green-800">More favorable:</strong>
+          <strong className="text-green-800">Provisions that protect you:</strong>
           <ul className="mt-1.5 pl-[18px] text-[13px] text-green-800 list-disc">
             <li>Clear $10,000 capital threshold protects you from surprise large charges</li>
-            <li>Capital exclusions now explicitly cover latent defects and pre-existing code violations</li>
+            <li>Capital exclusions explicitly cover latent defects and pre-existing code violations</li>
             <li>Management fee capped at {leaseConfig.cap}% or ${leaseConfig.capAmount}</li>
             <li>Non-exclusive early access during pre-delivery period for setup</li>
             <li>Change order provisions give you approval rights on material scope changes</li>

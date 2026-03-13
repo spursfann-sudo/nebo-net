@@ -27,7 +27,7 @@ export default function MoneyTab() {
         </PhaseCard>
 
         <Callout type="success">
-          The v2 &ldquo;Failure to Open&rdquo; default (new in this draft) is your strongest protection. If the tenant hasn&apos;t opened by the 90-day mark, you can: terminate on 10 days&apos; notice, draw on the Security for carrying and re-tenanting costs, and recover damages including unamortized Landlord Improvement costs.
+          The &ldquo;Failure to Open&rdquo; default is your strongest protection. If the tenant hasn&apos;t opened by the 90-day mark, you can: terminate on 10 days&apos; notice, draw on the Security for carrying and re-tenanting costs, and recover damages including unamortized Landlord Improvement costs.
         </Callout>
       </Section>
 
@@ -53,13 +53,13 @@ export default function MoneyTab() {
           </p>
         </div>
         <Callout type="tip">
-          This is a significant improvement over v1 for you. In v1, FMV was determined by mutual agreement with arbitration costs split equally. Now you set the rate and the tenant bears all arbitration costs if they want to challenge it. The 1%–4% band still applies either way.
+          This is a significant advantage for you. You set the FMV rate in your reasonable discretion, and the tenant bears all arbitration costs if they want to challenge it. The 1%–4% band still applies either way.
         </Callout>
       </Section>
 
       <Section title="What the Tenant Pays Beyond Base Rent (NNN)" icon="📊" party="landlord" tab={tab}>
         <p className="mb-2.5">
-          The tenant reimburses you 100% for operating costs. V2 expands what&apos;s included:
+          The tenant reimburses you 100% for operating costs. Here&apos;s what&apos;s included:
         </p>
         <Term label="Property Taxes" value="100% Tenant" />
         <Term label="Building Insurance" value="100% Tenant" />
@@ -84,7 +84,7 @@ export default function MoneyTab() {
         <Term label="Replenishment" value="15 business days after draw" />
         <Term label="Return" value="30 days after lease expiration + premises surrender" />
         <p className="mt-2.5 text-[13px]">
-          <strong>Broadened draw rights in v2:</strong> You can draw for monetary defaults, non-monetary defaults, carrying costs during vacancy (taxes, insurance, utilities, maintenance), re-tenanting costs (brokerage, TI concessions, free rent, legal, marketing), enforcement costs, and failure-to-open costs. Failure to replenish after a draw is itself a monetary default.
+          <strong>Broad draw rights:</strong> You can draw for monetary defaults, non-monetary defaults, carrying costs during vacancy (taxes, insurance, utilities, maintenance), re-tenanting costs (brokerage, TI concessions, free rent, legal, marketing), enforcement costs, and failure-to-open costs. Failure to replenish after a draw is itself a monetary default.
         </p>
       </Section>
     </div>

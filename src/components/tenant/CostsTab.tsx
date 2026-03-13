@@ -24,7 +24,7 @@ export default function CostsTab() {
         </PhaseCard>
 
         <PhaseCard phase="PHASE 3" title="Full Rent" badge="You pay: Base Rent + NNN" color="#ef4444">
-          Begins when you open or 90 days after delivery — whichever is first. This is the &ldquo;Outside Opening Date.&rdquo; Even if you&apos;re not open, full rent starts at the 90-day mark. And in v2, failure to open by this date is also an explicit default.
+          Begins when you open or 90 days after delivery — whichever is first. This is the &ldquo;Outside Opening Date.&rdquo; Even if you&apos;re not open, full rent starts at the 90-day mark. Additionally, failure to open by this date is an explicit default.
         </PhaseCard>
 
         <Callout type="action">
@@ -63,14 +63,14 @@ export default function CostsTab() {
 
       <Section title="Who Pays for What (NNN Breakdown)" icon="📊" party="tenant" tab={tab}>
         <p className="mb-2.5">
-          V2 expands what you pay for. Here&apos;s the full picture:
+          Here&apos;s what you&apos;re responsible for beyond base rent:
         </p>
         <CostRow item="Property Taxes" paidBy="You" note="100% passed through" />
         <CostRow item="Building Insurance (Landlord's policy)" paidBy="You" note="Premiums passed through" />
         <CostRow item="Your Own Insurance Policies" paidBy="You" note="CGL, professional liability, cyber, etc." />
         <CostRow item="Utilities" paidBy="You" note="Direct contracts with providers" />
-        <CostRow item="Routine Roof Maintenance" paidBy="You" note="NEW in v2: patching, gutters, flashing, minor membrane < $10K" />
-        <CostRow item="Routine Structural Maintenance" paidBy="You" note="NEW in v2: tuckpointing, caulking, crack repair < $10K" />
+        <CostRow item="Routine Roof Maintenance" paidBy="You" note="Patching, gutters, flashing, minor membrane < $10K" />
+        <CostRow item="Routine Structural Maintenance" paidBy="You" note="Tuckpointing, caulking, crack repair < $10K" />
         <CostRow item="Routine HVAC Maintenance" paidBy="You" note="Filters, coils, refrigerant, belts, PM contracts < $10K" />
         <CostRow item="Landscaping, Pest Control, Trash" paidBy="You" note="Part of Operating Costs" />
         <CostRow item="Parking Lot Patching & Striping" paidBy="You" note="Routine only, not full repaving" />
@@ -93,7 +93,7 @@ export default function CostsTab() {
 
       <Section title="Capital Amortization Risk" icon="⚠️" party="tenant" tab={tab}>
         <p className="mb-2.5">
-          New in v2: If a major system (roof, HVAC, plumbing, electrical, structural) fails prematurely because of <strong>your negligence, improper maintenance, or misuse</strong>, the landlord can propose amortizing the replacement cost over the system&apos;s useful life. Your amortized share becomes Additional Rent.
+          If a major system (roof, HVAC, plumbing, electrical, structural) fails prematurely because of <strong>your negligence, improper maintenance, or misuse</strong>, the landlord can propose amortizing the replacement cost over the system&apos;s useful life. Your amortized share becomes Additional Rent.
         </p>
         <Callout type="warning">
           This can only take effect if both parties agree in writing — you can&apos;t be forced into it. But it gives the landlord leverage if you&apos;ve neglected maintenance. The best defense: keep your HVAC maintenance contract current and document all maintenance activities carefully.
@@ -107,7 +107,7 @@ export default function CostsTab() {
         <Term label="Replenishment" value="15 business days after draw" />
         <Term label="Return" value="30 days after lease expiration + premises surrender" />
         <Callout type="warning">
-          V2 broadens the landlord&apos;s draw rights significantly. The landlord can now draw for: monetary defaults, non-monetary defaults, carrying costs during vacancy, re-tenanting costs (brokerage, TI concessions, free rent, legal, marketing), enforcement costs, AND failure-to-open costs. Failure to replenish after a draw is itself a monetary default.
+          The landlord has broad draw rights. They can draw for: monetary defaults, non-monetary defaults, carrying costs during vacancy, re-tenanting costs (brokerage, TI concessions, free rent, legal, marketing), enforcement costs, AND failure-to-open costs. Failure to replenish after a draw is itself a monetary default.
         </Callout>
       </Section>
     </div>

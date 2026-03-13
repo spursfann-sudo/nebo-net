@@ -28,7 +28,7 @@ export default function ObligationsTab() {
 
       <Section title="Capital Amortization for Tenant-Caused Damage" icon="⚖️" party="landlord" tab={tab}>
         <p className="mb-2.5">
-          New in v2: If a major building system (roof, HVAC, plumbing, electrical, structural) fails prematurely because of the tenant&apos;s negligence, improper maintenance, or misuse, you and the tenant can agree in writing to amortize the replacement cost over the useful life of the new system. The tenant&apos;s amortized share becomes Additional Rent.
+          If a major building system (roof, HVAC, plumbing, electrical, structural) fails prematurely because of the tenant&apos;s negligence, improper maintenance, or misuse, you and the tenant can agree in writing to amortize the replacement cost over the useful life of the new system. The tenant&apos;s amortized share becomes Additional Rent.
         </p>
         <Callout type="tip">
           This is a targeted protection. If the tenant lets the HVAC system fail by not maintaining it (despite the required maintenance contract), you don&apos;t have to eat the full replacement cost. The amortization must be agreed in writing — neither party is forced into it. But the HVAC maintenance contract requirement gives you strong leverage in this situation.
@@ -54,7 +54,7 @@ export default function ObligationsTab() {
         </Callout>
       </Section>
 
-      <Section title="Change Orders (New in v2)" icon="📋" party="landlord" tab={tab}>
+      <Section title="Change Orders" icon="📋" party="landlord" tab={tab}>
         <p className="mb-2.5">
           If field conditions, code requirements, or material unavailability require changes to the scope of work, you notify the tenant of the proposed change, cost impact, and schedule impact. If the change materially alters the scope or delays delivery by more than {leaseConfig.threshold} days, the tenant can approve or reject within 5 business days.
         </p>
@@ -63,7 +63,7 @@ export default function ObligationsTab() {
         </p>
       </Section>
 
-      <Section title="Early Access (New in v2)" icon="🔑" party="landlord" tab={tab}>
+      <Section title="Early Access" icon="🔑" party="landlord" tab={tab}>
         <p className="mb-2.5">
           After you deliver the Anticipated Delivery Notice (90 days before expected completion), the tenant has non-exclusive access for setup activities: furniture/equipment install, cabling, licensing inspections, staff training.
         </p>

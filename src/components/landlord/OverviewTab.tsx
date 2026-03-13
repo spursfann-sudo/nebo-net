@@ -15,7 +15,7 @@ export default function OverviewTab() {
           The tenant is opening a <strong>behavioral health clinic for veterans</strong> (VA Community Care Network) with 6–9 therapists and 1–2 nurse practitioners providing outpatient mental health services.
         </p>
         <Callout type="tip">
-          Compared to v1, this draft passes more routine maintenance through to the tenant (roof patching, structural upkeep, HVAC servicing) while keeping capital items above $10,000 on you. It also adds an explicit &ldquo;Failure to Open&rdquo; default trigger and broadens your draw rights on the security deposit.
+          This lease passes routine maintenance through to the tenant (roof patching, structural upkeep, HVAC servicing) while keeping capital items above $10,000 on you. It also includes an explicit &ldquo;Failure to Open&rdquo; default trigger and broad draw rights on the security deposit.
         </Callout>
       </Section>
 
@@ -35,9 +35,9 @@ export default function OverviewTab() {
         </Callout>
       </Section>
 
-      <Section title="Document Structure (v2)" icon="📄" party="landlord" tab={tab}>
+      <Section title="Document Structure" icon="📄" party="landlord" tab={tab}>
         <p className="mb-2.5">
-          The v2 lease is organized into four parts to make it easier to navigate:
+          The lease is organized into four parts to make it easier to navigate:
         </p>
         <div className="bg-slate-50 rounded-lg p-3.5 mb-2">
           <strong>Part I: Deal Terms</strong> — Parties, premises, term, rent, escalation, operating expenses, credit support. This is where all the business terms live.

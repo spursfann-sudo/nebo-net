@@ -181,7 +181,7 @@ export default function LandlordLeaseGuide() {
             color: "#92400e",
           }}
         >
-          DRAFT v2 — For Discussion Only
+          DRAFT — For Discussion Only
         </div>
       </div>
 
@@ -230,7 +230,7 @@ export default function LandlordLeaseGuide() {
               The tenant is opening a <strong>behavioral health clinic for veterans</strong> (VA Community Care Network) with 6–9 therapists and 1–2 nurse practitioners providing outpatient mental health services.
             </p>
             <Callout type="tip">
-              Compared to v1, this draft passes more routine maintenance through to the tenant (roof patching, structural upkeep, HVAC servicing) while keeping capital items above $10,000 on you. It also adds an explicit "Failure to Open" default trigger and broadens your draw rights on the security deposit.
+              This lease passes routine maintenance through to the tenant (roof patching, structural upkeep, HVAC servicing) while keeping capital items above $10,000 on you. It also includes an explicit "Failure to Open" default trigger and broad draw rights on the security deposit.
             </Callout>
           </Section>
 
@@ -250,9 +250,9 @@ export default function LandlordLeaseGuide() {
             </Callout>
           </Section>
 
-          <Section title="Document Structure (v2)" icon="📄">
+          <Section title="Document Structure" icon="📄">
             <p style={{ margin: "0 0 10px" }}>
-              The v2 lease is organized into four parts to make it easier to navigate:
+              The lease is organized into four parts to make it easier to navigate:
             </p>
             <div style={{ background: "#f8fafc", borderRadius: 8, padding: 14, marginBottom: 8 }}>
               <strong>Part I: Deal Terms</strong> — Parties, premises, term, rent, escalation, operating expenses, credit support. This is where all the business terms live.
@@ -303,7 +303,7 @@ export default function LandlordLeaseGuide() {
             </PhaseCard>
 
             <Callout type="success">
-              The v2 "Failure to Open" default (new in this draft) is your strongest protection. If the tenant hasn't opened by the 90-day mark, you can: terminate on 10 days' notice, draw on the Security for carrying and re-tenanting costs, and recover damages including unamortized Landlord Improvement costs.
+              The "Failure to Open" default is your strongest protection. If the tenant hasn't opened by the 90-day mark, you can: terminate on 10 days' notice, draw on the Security for carrying and re-tenanting costs, and recover damages including unamortized Landlord Improvement costs.
             </Callout>
           </Section>
 
@@ -329,13 +329,13 @@ export default function LandlordLeaseGuide() {
               </p>
             </div>
             <Callout type="tip">
-              This is a significant improvement over v1 for you. In v1, FMV was determined by mutual agreement with arbitration costs split equally. Now you set the rate and the tenant bears all arbitration costs if they want to challenge it. The 1%–4% band still applies either way.
+              This is a significant advantage for you. You set the FMV rate in your reasonable discretion, and the tenant bears all arbitration costs if they want to challenge it. The 1%–4% band still applies either way.
             </Callout>
           </Section>
 
           <Section title="What the Tenant Pays Beyond Base Rent (NNN)" icon="📊">
             <p style={{ margin: "0 0 10px" }}>
-              The tenant reimburses you 100% for operating costs. V2 expands what's included:
+              The tenant reimburses you 100% for operating costs. Here's what's included:
             </p>
             <Term label="Property Taxes" value="100% Tenant" />
             <Term label="Building Insurance" value="100% Tenant" />
@@ -360,7 +360,7 @@ export default function LandlordLeaseGuide() {
             <Term label="Replenishment" value="15 business days after draw" />
             <Term label="Return" value="30 days after lease expiration + premises surrender" />
             <p style={{ marginTop: 10, fontSize: 13 }}>
-              <strong>Broadened draw rights in v2:</strong> You can draw for monetary defaults, non-monetary defaults, carrying costs during vacancy (taxes, insurance, utilities, maintenance), re-tenanting costs (brokerage, TI concessions, free rent, legal, marketing), enforcement costs, and failure-to-open costs. Failure to replenish after a draw is itself a monetary default.
+              <strong>Broad draw rights:</strong> You can draw for monetary defaults, non-monetary defaults, carrying costs during vacancy (taxes, insurance, utilities, maintenance), re-tenanting costs (brokerage, TI concessions, free rent, legal, marketing), enforcement costs, and failure-to-open costs. Failure to replenish after a draw is itself a monetary default.
             </p>
           </Section>
         </div>
@@ -394,7 +394,7 @@ export default function LandlordLeaseGuide() {
 
             <div style={{ background: "#eff6ff", borderRadius: 8, padding: 14, marginTop: 10, border: "1px solid #bfdbfe" }}>
               <div style={{ fontWeight: 600, fontSize: 14, marginBottom: 6, color: "#1e40af" }}>
-                New in v2: Survival Clause
+                Survival Clause
               </div>
               <p style={{ margin: 0, fontSize: 13, color: "#1e40af" }}>
                 Even after the guaranty burns off, it <strong>survives for all obligations that accrued before the burn-off date</strong> — unpaid rent, outstanding reconciliation amounts, and unreimbursed costs. This means if the tenant owes money from the guaranty period that hasn't been collected yet, Kendall Newson remains on the hook for those specific amounts regardless of when you pursue them.
@@ -402,7 +402,7 @@ export default function LandlordLeaseGuide() {
             </div>
           </Section>
 
-          <Section title="Failure to Open Default (New in v2)" icon="🚪">
+          <Section title="Failure to Open Default" icon="🚪">
             <p style={{ margin: "0 0 10px" }}>
               If the tenant hasn't opened for business by the Outside Opening Date (90 days after delivery), hasn't been diligently preparing, or refuses to accept possession, the tenant is in default. Your remedies include:
             </p>
@@ -413,7 +413,7 @@ export default function LandlordLeaseGuide() {
               <li style={{ marginBottom: 4 }}>Pursue the personal guarantor directly</li>
             </ul>
             <Callout type="success">
-              This is a major addition from v1, where the only consequence of the tenant not opening was that full rent kicked in automatically. Now you have an explicit termination right and expanded damage recovery if the tenant fails to open.
+              This gives you an explicit termination right and expanded damage recovery if the tenant fails to open, beyond the automatic rent trigger at the Outside Opening Date.
             </Callout>
           </Section>
 
@@ -452,7 +452,7 @@ export default function LandlordLeaseGuide() {
             </Callout>
           </Section>
 
-          <Section title="Memorandum of Lease (New in v2)" icon="📝">
+          <Section title="Memorandum of Lease" icon="📝">
             <p style={{ margin: "0 0 10px" }}>
               Either party can record a short-form memorandum of the lease in the Madison County real property records. The memorandum identifies the parties, premises, and term (including renewal rights) but omits financial terms. Both parties must cooperate within 15 business days.
             </p>
@@ -509,7 +509,7 @@ export default function LandlordLeaseGuide() {
 
           <Section title="Capital Amortization for Tenant-Caused Damage" icon="⚖️">
             <p style={{ margin: "0 0 10px" }}>
-              New in v2: If a major building system (roof, HVAC, plumbing, electrical, structural) fails prematurely because of the tenant's negligence, improper maintenance, or misuse, you and the tenant can agree in writing to amortize the replacement cost over the useful life of the new system. The tenant's amortized share becomes Additional Rent.
+              If a major building system (roof, HVAC, plumbing, electrical, structural) fails prematurely because of the tenant's negligence, improper maintenance, or misuse, you and the tenant can agree in writing to amortize the replacement cost over the useful life of the new system. The tenant's amortized share becomes Additional Rent.
             </p>
             <Callout type="tip">
               This is a targeted protection. If the tenant lets the HVAC system fail by not maintaining it (despite the required maintenance contract), you don't have to eat the full replacement cost. The amortization must be agreed in writing — neither party is forced into it. But the HVAC maintenance contract requirement gives you strong leverage in this situation.
@@ -535,7 +535,7 @@ export default function LandlordLeaseGuide() {
             </Callout>
           </Section>
 
-          <Section title="Change Orders (New in v2)" icon="📋">
+          <Section title="Change Orders" icon="📋">
             <p style={{ margin: "0 0 10px" }}>
               If field conditions, code requirements, or material unavailability require changes to the scope of work, you notify the tenant of the proposed change, cost impact, and schedule impact. If the change materially alters the scope or delays delivery by more than [THRESHOLD] days, the tenant can approve or reject within 5 business days.
             </p>
@@ -544,7 +544,7 @@ export default function LandlordLeaseGuide() {
             </p>
           </Section>
 
-          <Section title="Early Access (New in v2)" icon="🔑">
+          <Section title="Early Access" icon="🔑">
             <p style={{ margin: "0 0 10px" }}>
               After you deliver the Anticipated Delivery Notice (90 days before expected completion), the tenant has non-exclusive access for setup activities: furniture/equipment install, cabling, licensing inspections, staff training.
             </p>
