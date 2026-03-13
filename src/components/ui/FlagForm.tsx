@@ -17,6 +17,7 @@ export default function FlagForm({
 }) {
   const [note, setNote] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
   const handleSubmit = async () => {
     if (!note.trim()) return;
@@ -25,12 +26,15 @@ export default function FlagForm({
       const result = await submitFlag(party, tab, section, note.trim());
       if (!result.success) {
         console.error("Flag submission failed:", result.error);
-        throw new Error(result.error);
+        setErrorMsg(result.error ?? "Unknown error");
+        setStatus("error");
+        return;
       }
       setStatus("sent");
       setTimeout(() => onClose(), 2000);
     } catch (err) {
       console.error("Flag submission error:", err);
+      setErrorMsg(err instanceof Error ? err.message : String(err));
       setStatus("error");
     }
   };
@@ -67,7 +71,9 @@ export default function FlagForm({
         </button>
       </div>
       {status === "error" && (
-        <p className="text-red-600 text-xs mt-1">Something went wrong. Please try again.</p>
+        <p className="text-red-600 text-xs mt-1">
+          {errorMsg || "Something went wrong. Please try again."}
+        </p>
       )}
     </div>
   );
